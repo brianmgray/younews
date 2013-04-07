@@ -1,5 +1,13 @@
 <?php include 'header.php' ?>
-
+		
+		<div id="main-content" class="container">
+		<div id="sub-menu">
+		<a href="#" class="item active">Menu 1</a>
+		<a href="#" class="item">Menu 1</a>
+		<a href="#" class="item">Menu 1</a>
+		
+		
+		</div>
       <!-- Example row of columns -->
       <div id="main" class="row-fluid">
       <div class="row">
@@ -43,6 +51,6 @@
       </div>
       </div>
 
-      <hr>
+      </div>
 
 <?php include 'footer.php' ?>

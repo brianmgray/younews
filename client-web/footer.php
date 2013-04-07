@@ -9,10 +9,9 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/lib/jquery.js"></script>
-    <script src="js/lib/sspace.js"></script>
-    <script src="js/app/app.js"></script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/sspace.js"></script>
+   
 
   </body>
 </html>

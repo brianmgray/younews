@@ -86,7 +86,7 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/lib/html5shiv.js"></script>
+      <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
@@ -101,17 +101,22 @@
   
    <div class="container">
   
-        <div class="masthead">
+        
           
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="container">
-                <ul class="nav">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/post.php">Post</a></li>
-                  <li><a href="/submit.php">Submit</a></li>
-                  
-                </ul>
-              </div>
-            </div>
-          </div><!-- /.navbar         </div>-->
+         <div id="menu">
+         <ul class="nav">
+         <li><a href="#" class="logo"><img src="img/logo.png"/></a></li>
+         <li><a href="#" class="menu-item">Menu 1</a></li>
+         <li><a href="#" class="menu-item">Menu 2</a></li>
+         <li><a href="#" class="menu-item">Menu 3</a></li>
+         </ul>
+         
+         </div>
+            
+          
+         
+         
+         
+         
+         
+         

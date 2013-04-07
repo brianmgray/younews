@@ -1,17 +1,94 @@
+/* line 2, ../sass/global.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* line 3, ../sass/global.scss */
+#article {
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  /* Firefox */
+  -webkit-box-sizing: content-box;
+  /* Safari */ }
+
+/* line 9, ../sass/global.scss */
 body {
   background-image: url("../img/bg.png"); }
 
-/* line 7, ../sass/global.scss */
+/* line 13, ../sass/global.scss */
 #main {
   background: #f2f1f1;
   border-top: #3a3e42 solid 10px;
-  position: absolute;
-  top: 150px; }
+  padding: 20px;
+  margin-bottom: 50px; }
 
-/* line 18, ../sass/global.scss */
+/* line 24, ../sass/global.scss */
 .navbar {
   margin-bottom: 100px;
   margin-top: 0px;
   position: absolute;
   top: 0px; }
+
+/* line 34, ../sass/global.scss */
+.item {
+  background: #26282a;
+  border-radius: 5px 5px 0px 0px;
+  padding: 15px;
+  margin-right: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none; }
+
+/* line 46, ../sass/global.scss */
+.item:first {
+  margin-let: 15px; }
+
+/* line 50, ../sass/global.scss */
+.active {
+  background: #3a3e42; }
+
+/* line 54, ../sass/global.scss */
+.item:hover {
+  background: #3a3e42;
+  color: #fff; }
+
+/* line 60, ../sass/global.scss */
+#main-content {
+  position: absolute;
+  top: 300px; }
+
+/* line 67, ../sass/global.scss */
+#sub-menu {
+  position: relative;
+  top: -13px; }
+
+/* line 74, ../sass/global.scss */
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+/* line 76, ../sass/global.scss */
+#menu {
+  position: absolute;
+  top: 103px; }
+  /* line 81, ../sass/global.scss */
+  #menu .menu-item {
+    font-size: 24px;
+    padding: 34px 10px;
+    border-right: #6e7973 solid 1px;
+    border-left: white solid 1px;
+    height: 98px;
+    color: #fff; }
+
+/* line 92, ../sass/global.scss */
+.nav li {
+  float: left; }
+  /* line 95, ../sass/global.scss */
+  .nav li a {
+    float: none; }
+
+/* line 99, ../sass/global.scss */
+.logo {
+  background: url("../img/logo.png");
+  width: 100px;
+  margin-top: 20px; }
