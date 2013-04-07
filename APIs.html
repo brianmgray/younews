@@ -1,3 +1,7 @@
+Header:
+Access-Control-Allow-Origin: *
+
+
 POST http://[server]/story/
 payload:
 {
@@ -30,7 +34,7 @@ returns:
     ]
 }
 
-GET http://[server]/feed/15217 (how to do the rest we'll figure out later)
+GET http://[server]/feed/15217/[public|private]
 {
     "stories": [
         {
