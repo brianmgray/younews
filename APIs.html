@@ -1,0 +1,59 @@
+POST http://[server]/story/
+payload:
+{
+    "headline": "A Walk on the West Side",
+    "location": 12517,
+    "authorId": 1258,
+    "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+    "links": [
+        "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
+    ],
+    "privacy": "PUBLIC"
+}
+returns:
+unique ID in the payload - this will be used to create the share, etc. URLs
+
+
+GET http://[server]/story/[id]
+returns:
+{
+    "id" : 123,
+    "headline": "A Walk on the West Side",
+    "authorId": 1258,
+    "location": 12517,
+    "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+    "privacy": "[private|public]"
+    "links": [
+        "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
+    ]
+}
+
+GET http://[server]/author/[id]
+returns:
+{
+    "id": 1258,
+    "username": "cooldude",
+    "first": Brian,
+    "last": "Gray"
+}
+
+GET http://[server]/feed/15217 (how to do the rest we'll figure out later)
+{
+    "stories": [
+        {
+            "id" : 123,
+            "headline": "A Walk on the West Side",
+            "location": 12517,
+            "snippet": "This is my story...",
+            "privacy": "[public|private]"
+        },
+        {
+            "id" : 124,
+            "headline": "A Walk on the West Side",
+            "location": 12517,
+            "snippet": "This is my story...",
+            s"privacy": "[public|private]"
+        }
+    ]
+}
+
