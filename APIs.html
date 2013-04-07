@@ -1,0 +1,39 @@
+POST http://[server]/story/
+payload:
+{
+    "headline": "A Walk on the West Side",
+    "location": 12517,
+    "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+    "links": [
+        "link": "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
+    ],
+    "privacy": "[private|public]"
+}
+returns:
+unique ID in the payload - this will be used to create the share, etc. URLs
+
+
+GET http://[server]/feed/[zip]/public
+{
+    "stories": [
+        {
+            "headline": "A Walk on the West Side",
+            "location": 12517,
+            "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+            "privacy": "[private|public]"
+            "links": [
+                "link": "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
+            ],
+        },
+        {
+            "headline": "A Walk on the West Side",
+            "location": 12517,
+            "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+            "privacy": "[private|public]"
+            "links": [
+                "link": "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
+            ],
+        }
+    ]
+}
+
