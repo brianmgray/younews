@@ -1,0 +1,17 @@
+/* line 3, ../sass/global.scss */
+body {
+  background-image: url("../img/bg.png"); }
+
+/* line 7, ../sass/global.scss */
+#main {
+  background: #f2f1f1;
+  border-top: #3a3e42 solid 10px;
+  position: absolute;
+  top: 150px; }
+
+/* line 18, ../sass/global.scss */
+.navbar {
+  margin-bottom: 100px;
+  margin-top: 0px;
+  position: absolute;
+  top: 0px; }
