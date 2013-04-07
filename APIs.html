@@ -4,7 +4,7 @@ payload:
     "headline": "A Walk on the West Side",
     "location": 12517,
     "authorId": 1258,
-    "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+    "content": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
     "links": [
         "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
     ],
@@ -21,20 +21,13 @@ returns:
     "headline": "A Walk on the West Side",
     "authorId": 1258,
     "location": 12517,
-    "story": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
-    "privacy": "[private|public]"
+    "likes": 348,
+    "views": 796,
+    "content": "This is my story. It can be long. It can also contain &lt;strong&gt;html&lt;/strong&gt;",
+    "privacy": "[PUBLIC|PRIVATE]"
     "links": [
         "http://feeds.themoth.org/~r/themothpodcast/~5/rzQ00FhC99E/moth-podcast-270-wayne-reece.mp3"
     ]
-}
-
-GET http://[server]/author/[id]
-returns:
-{
-    "id": 1258,
-    "username": "cooldude",
-    "first": Brian,
-    "last": "Gray"
 }
 
 GET http://[server]/feed/15217 (how to do the rest we'll figure out later)
@@ -44,15 +37,19 @@ GET http://[server]/feed/15217 (how to do the rest we'll figure out later)
             "id" : 123,
             "headline": "A Walk on the West Side",
             "location": 12517,
-            "snippet": "This is my story...",
-            "privacy": "[public|private]"
+            "uploadTime": "2013-04-06T10:07:15Z"
+            "likes": 348,
+            "views": 796,
+            "privacy": "[PUBLIC|PRIVATE]"
         },
         {
             "id" : 124,
             "headline": "A Walk on the West Side",
             "location": 12517,
-            "snippet": "This is my story...",
-            s"privacy": "[public|private]"
+            "uploadTime": "2013-04-05T10:07:15Z"
+            "likes": 348,
+            "views": 796,
+            "privacy": "[PUBLIC|PRIVATE]"
         }
     ]
 }
